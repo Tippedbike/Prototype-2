@@ -250,6 +250,8 @@ GameObject:
   m_Component:
   - component: {fileID: 458270}
   - component: {fileID: 9506116}
+  - component: {fileID: 1424242918}
+  - component: {fileID: 1424242919}
   m_Layer: 0
   m_Name: Animal_Moose_02
   m_TagString: Untagged
@@ -300,6 +302,31 @@ Animator:
   m_HasTransformHierarchy: 0
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1424242918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037a3187ca10c4a419dc7d80d5f8a2a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 15
+--- !u!114 &1424242919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e12afae115ac4b40a1a72e2f2dcf84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &153942
 GameObject:
   m_ObjectHideFlags: 0
