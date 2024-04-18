@@ -4,25 +4,24 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
-    private int score; 
+    private GameManager gameManager;
+    public int pointValue;
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
-        UpdateScore(0);
     }
     void OnTriggerEnter(Collider other)
     {
-        if (gameObject )
+        if (gameObject)
         {
         Destroy(gameObject);
         Destroy(other.gameObject);
+        gameManager.UpdateScore(pointValue);
         }
     }
     // Update is called once per frame
-   public void UpdateScore(int scoreToAdd)
+    void Update()
     {
-        score += scoreToAdd;
-        Debug.Log("Score: " + score);
+   
     }
 }

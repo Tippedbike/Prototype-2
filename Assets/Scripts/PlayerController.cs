@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
     // Update is called once per frame
     void Update() 
@@ -54,5 +54,14 @@ transform.position = new Vector3(transform.position.x, transform.position.y, zRa
 
         forwardInput = Input.GetAxis("Vertical");
         transform. Translate(Vector3.forward * forwardInput * Time.deltaTime * speed);
+    }
+    private void OnCollisionEnter(Collision other)
+    {
+        // if player collides with bomb, explode and set gameOver to true
+        if (other.gameObject.CompareTag(""))
+        {
+            Debug.Log("Game Over!");
+            Destroy(other.gameObject);
+        } 
     }
 }
